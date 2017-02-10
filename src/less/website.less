@@ -4,12 +4,41 @@
 @import "./panel.less";
 @import "./search.less";
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
 @header-background: #f8f8f8;
 @header-border: #e7e7e7;
+@navbar-background: #34495e;
+
+body {
+    padding-top: 80px;
+    background: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: #34495e;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
 
 .faq-navbar {
     margin: 0px;
     border: 0px;
+    background-color: @navbar-background;
 }
 
 .faq-header {
