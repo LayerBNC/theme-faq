@@ -1,7 +1,7 @@
 {
-  "name": "gitbook-plugin-theme-faq",
-  "description": "Theme for using GitBook as a FAQ or Knowledge base",
-  "version": "1.2.1",
+  "name": "gitbook-plugin-theme-layerfaq",
+  "description": "Theme for using GitBook as a FAQ or Knowledge base, adapted to fit LayerBNC styles.",
+  "version": "1.0.0",
   "engines": {
     "gitbook": ">=3.0.0-pre.10"
   },
@@ -15,17 +15,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/theme-faq.git"
+    "url": "https://github.com/LayerBNC/theme-layerfaq.git"
   },
   "author": "FriendCode Inc. <contact@gitbook.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GitbookIO/theme-faq/issues"
+    "url": "https://github.com/LayerBNC/theme-layerfaq/issues"
   },
   "contributors": [
     {
       "name": "Samy Pessé",
       "email": "samy@gitbook.com"
+    },
+    {
+      "name": "LayerBNC Project",
+      "email": "alex@layerbnc.org"
     }
   ]
 }
