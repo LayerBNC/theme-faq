@@ -29,7 +29,7 @@
 {% endblock %}
 
 {% block body %}
-<header class="navbar navbar-inverse navbar-fixed-top faq-navbar">
+<header class="navbar navbar-inverse navbar-fixed-top faq-navbar" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
@@ -44,35 +44,34 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" href="#" data-toogle="dropdown">
-            <i class="icon-info-sign"></i>
-            About
-            <i class="icon-angle-down"></i>
-          </a>
+        <li class="active"><a href="?p=home"><i class="icon-home"></i> Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-info-sign"></i> About <i class="icon-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="?p=servers">Our Servers</a></li>
+              <li><a href="?p=volunteers">The Volunteers</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag"></i> Policies <i class="icon-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="?p=terms">Terms &amp; Conditions</a></li>
+                <li><a href="?p=privacy">Privacy Statement</a></li>
+            </ul>
+          </li>
+        <li><a href="//help.layerbnc.org" target="_blank"><i class="icon-question-sign"></i> Help Center</a></li><li><a href="//status.layerbnc.org" target="_blank"><i class="icon-signal"></i> Status</a></li><li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-plus"></i> More <i class="icon-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="//blog.layerbnc.org" target="_blank">Announcements</a></li>
+            <li><a href="?p=blacklist">Blacklist</a></li>
+            <li><a href="?p=contact">Contact us</a></li>
+            <li><a href="//github.com/LayerBNC">GitHub</a></li>
+            <li><a href="//twitter.com/LayerBNC" target="_blank">Twitter</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
-<!--<nav class="faq-navbar navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ basePath }}">
-                {% block faq_header_brand %}{{ config.title|d("Help Center", true) }}{% endblock %}
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            {% block faq_menu %}{% endblock %}
-        </div>
-    </div>
-</nav>-->
 </header>
 
 <div class="faq-header">
